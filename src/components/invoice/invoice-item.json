@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_invoice_invoice_items",
+  "info": {
+    "displayName": "Invoice Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description1": {
+      "type": "string"
+    },
+    "description2": {
+      "type": "string"
+    },
+    "description3": {
+      "type": "string"
+    },
+    "hsnCode": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "decimal",
+      "required": true
+    },
+    "unit": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "unitPrice": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

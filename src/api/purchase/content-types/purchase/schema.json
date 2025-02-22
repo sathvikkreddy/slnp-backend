@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchases",
+  "info": {
+    "singularName": "purchase",
+    "pluralName": "purchases",
+    "displayName": "Purchase"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "invoiceNo": {
+      "type": "string",
+      "required": true
+    },
+    "taxableAmount": {
+      "type": "decimal",
+      "required": true
+    },
+    "cgstAmount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "sgstAmount": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "igstAmount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "totalValue": {
+      "type": "decimal",
+      "required": true
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "purchases"
+    }
+  }
+}
