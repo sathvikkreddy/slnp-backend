@@ -4,46 +4,31 @@
   "info": {
     "singularName": "company",
     "pluralName": "companies",
-    "displayName": "Company"
+    "displayName": "Company",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "code": {
-      "type": "string",
-      "required": true
-    },
     "name": {
       "type": "string",
       "required": true
     },
-    "gstNo": {
+    "gst_number": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "billingAddress": {
+    "address": {
       "type": "component",
       "repeatable": false,
       "component": "address.full-address",
       "required": true
     },
-    "shippingAddress": {
-      "type": "component",
-      "repeatable": false,
-      "component": "address.full-address",
-      "required": true
-    },
-    "paymentTerms": {
+    "payment_terms": {
       "type": "string",
       "required": false
-    },
-    "invoices": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::invoice.invoice",
-      "mappedBy": "company"
     },
     "payments": {
       "type": "relation",
@@ -56,6 +41,18 @@
       "relation": "oneToMany",
       "target": "api::purchase.purchase",
       "mappedBy": "company"
+    },
+    "billed_invoices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::invoice.invoice",
+      "mappedBy": "bill_to_company"
+    },
+    "shipped_invoices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::invoice.invoice",
+      "mappedBy": "ship_to_company"
     }
   }
 }

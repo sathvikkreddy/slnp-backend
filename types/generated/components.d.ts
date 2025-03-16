@@ -3,14 +3,15 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface AddressFullAddress extends Struct.ComponentSchema {
   collectionName: 'components_address_full_addresses';
   info: {
+    description: '';
     displayName: 'Full Address';
   };
   attributes: {
-    addressLine1: Schema.Attribute.String & Schema.Attribute.Required;
-    addressLine2: Schema.Attribute.String;
-    addressLine3: Schema.Attribute.String;
+    address_line_1: Schema.Attribute.String & Schema.Attribute.Required;
+    address_line_2: Schema.Attribute.String;
+    address_line_3: Schema.Attribute.String;
     state: Schema.Attribute.String;
-    stateCode: Schema.Attribute.Integer &
+    state_code: Schema.Attribute.Integer &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMax<
         {
@@ -24,18 +25,19 @@ export interface AddressFullAddress extends Struct.ComponentSchema {
 export interface InvoiceInvoiceItem extends Struct.ComponentSchema {
   collectionName: 'components_invoice_invoice_items';
   info: {
+    description: '';
     displayName: 'Invoice Item';
   };
   attributes: {
     amount: Schema.Attribute.Decimal & Schema.Attribute.Required;
-    description1: Schema.Attribute.String;
-    description2: Schema.Attribute.String;
-    description3: Schema.Attribute.String;
-    hsnCode: Schema.Attribute.String & Schema.Attribute.Required;
+    description_line_1: Schema.Attribute.String;
+    description_line_2: Schema.Attribute.String;
+    description_line_3: Schema.Attribute.String;
+    hsn_code: Schema.Attribute.String & Schema.Attribute.Required;
     quantity: Schema.Attribute.Decimal & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     unit: Schema.Attribute.String & Schema.Attribute.Required;
-    unitPrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    unit_price: Schema.Attribute.Decimal & Schema.Attribute.Required;
   };
 }
 

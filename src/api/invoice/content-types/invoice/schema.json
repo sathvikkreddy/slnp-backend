@@ -4,13 +4,14 @@
   "info": {
     "singularName": "invoice",
     "pluralName": "invoices",
-    "displayName": "Invoice"
+    "displayName": "Invoice",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "invoiceNumber": {
+    "invoice_number": {
       "type": "string",
       "required": true,
       "unique": true
@@ -19,20 +20,15 @@
       "type": "date",
       "required": true
     },
-    "company": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::company.company",
-      "inversedBy": "invoices"
-    },
-    "ewayBillNo": {
+    "eway_bill_number": {
       "type": "string"
     },
-    "purchaseOrder": {
+    "purchase_order": {
       "type": "string"
     },
-    "vehicleNo": {
-      "type": "string"
+    "vehicle_number": {
+      "type": "string",
+      "required": true
     },
     "items": {
       "type": "component",
@@ -41,51 +37,68 @@
       "min": 1,
       "required": true
     },
-    "totalQuantity": {
-      "type": "decimal",
-      "required": true
-    },
-    "totalAmount": {
-      "type": "decimal",
-      "required": true
-    },
-    "transportAmount": {
-      "type": "decimal",
-      "required": false
-    },
-    "taxableAmount": {
-      "type": "decimal",
-      "required": true
-    },
-    "sgstAmount": {
+    "total_quantity": {
       "type": "decimal",
       "required": true,
       "default": 0
     },
-    "cgstAmount": {
-      "required": true,
-      "type": "decimal",
-      "default": 0
-    },
-    "igstAmount": {
+    "total_amount": {
       "type": "decimal",
       "required": true,
       "default": 0
     },
-    "roundOffAmount": {
+    "transport_amount": {
+      "type": "decimal",
+      "required": false,
+      "default": 0
+    },
+    "taxable_amount": {
       "type": "decimal",
       "required": true,
       "default": 0
     },
-    "invoiceAmount": {
+    "sgst_amount": {
       "type": "decimal",
-      "required": true
+      "required": true,
+      "default": 0
+    },
+    "cgst_amount": {
+      "required": true,
+      "type": "decimal",
+      "default": 0
+    },
+    "igst_amount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "round_off_amount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "invoice_amount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
     },
     "payments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::payment.payment",
       "mappedBy": "invoice"
+    },
+    "bill_to_company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "billed_invoices"
+    },
+    "ship_to_company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "shipped_invoices"
     }
   }
 }

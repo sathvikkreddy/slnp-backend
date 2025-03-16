@@ -1,24 +1,25 @@
 {
   "collectionName": "components_address_full_addresses",
   "info": {
-    "displayName": "Full Address"
+    "displayName": "Full Address",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "addressLine1": {
+    "address_line_1": {
       "type": "string",
       "required": true
     },
-    "addressLine2": {
+    "address_line_2": {
       "type": "string"
     },
-    "addressLine3": {
+    "address_line_3": {
       "type": "string"
     },
     "state": {
       "type": "string"
     },
-    "stateCode": {
+    "state_code": {
       "type": "integer",
       "required": true,
       "min": 1,

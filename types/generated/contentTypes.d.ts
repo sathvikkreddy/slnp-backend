@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
   collectionName: 'companies';
   info: {
+    description: '';
     displayName: 'Company';
     pluralName: 'companies';
     singularName: 'company';
@@ -380,16 +381,18 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    billingAddress: Schema.Attribute.Component<'address.full-address', false> &
+    address: Schema.Attribute.Component<'address.full-address', false> &
       Schema.Attribute.Required;
-    code: Schema.Attribute.String & Schema.Attribute.Required;
+    billed_invoices: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::invoice.invoice'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    gstNo: Schema.Attribute.String &
+    gst_number: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
-    invoices: Schema.Attribute.Relation<'oneToMany', 'api::invoice.invoice'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -397,12 +400,14 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
+    payment_terms: Schema.Attribute.String;
     payments: Schema.Attribute.Relation<'oneToMany', 'api::payment.payment'>;
-    paymentTerms: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     purchases: Schema.Attribute.Relation<'oneToMany', 'api::purchase.purchase'>;
-    shippingAddress: Schema.Attribute.Component<'address.full-address', false> &
-      Schema.Attribute.Required;
+    shipped_invoices: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::invoice.invoice'
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -412,6 +417,7 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
 export interface ApiInvoiceInvoice extends Struct.CollectionTypeSchema {
   collectionName: 'invoices';
   info: {
+    description: '';
     displayName: 'Invoice';
     pluralName: 'invoices';
     singularName: 'invoice';
@@ -420,20 +426,25 @@ export interface ApiInvoiceInvoice extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    cgstAmount: Schema.Attribute.Decimal &
+    bill_to_company: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::company.company'
+    >;
+    cgst_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<0>;
-    company: Schema.Attribute.Relation<'manyToOne', 'api::company.company'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date: Schema.Attribute.Date & Schema.Attribute.Required;
-    ewayBillNo: Schema.Attribute.String;
-    igstAmount: Schema.Attribute.Decimal &
+    eway_bill_number: Schema.Attribute.String;
+    igst_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<0>;
-    invoiceAmount: Schema.Attribute.Decimal & Schema.Attribute.Required;
-    invoiceNumber: Schema.Attribute.String &
+    invoice_amount: Schema.Attribute.Decimal &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
+    invoice_number: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     items: Schema.Attribute.Component<'invoice.invoice-item', true> &
@@ -452,21 +463,31 @@ export interface ApiInvoiceInvoice extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     payments: Schema.Attribute.Relation<'oneToMany', 'api::payment.payment'>;
     publishedAt: Schema.Attribute.DateTime;
-    purchaseOrder: Schema.Attribute.String;
-    roundOffAmount: Schema.Attribute.Decimal &
+    purchase_order: Schema.Attribute.String;
+    round_off_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<0>;
-    sgstAmount: Schema.Attribute.Decimal &
+    sgst_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<0>;
-    taxableAmount: Schema.Attribute.Decimal & Schema.Attribute.Required;
-    totalAmount: Schema.Attribute.Decimal & Schema.Attribute.Required;
-    totalQuantity: Schema.Attribute.Decimal & Schema.Attribute.Required;
-    transportAmount: Schema.Attribute.Decimal;
+    ship_to_company: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::company.company'
+    >;
+    taxable_amount: Schema.Attribute.Decimal &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
+    total_amount: Schema.Attribute.Decimal &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
+    total_quantity: Schema.Attribute.Decimal &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
+    transport_amount: Schema.Attribute.Decimal & Schema.Attribute.DefaultTo<0>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    vehicleNo: Schema.Attribute.String;
+    vehicle_number: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 

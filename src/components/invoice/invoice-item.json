@@ -1,7 +1,8 @@
 {
   "collectionName": "components_invoice_invoice_items",
   "info": {
-    "displayName": "Invoice Item"
+    "displayName": "Invoice Item",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,16 +10,16 @@
       "type": "string",
       "required": true
     },
-    "description1": {
+    "description_line_1": {
       "type": "string"
     },
-    "description2": {
+    "description_line_2": {
       "type": "string"
     },
-    "description3": {
+    "description_line_3": {
       "type": "string"
     },
-    "hsnCode": {
+    "hsn_code": {
       "type": "string",
       "required": true
     },
@@ -34,7 +35,7 @@
       "type": "decimal",
       "required": true
     },
-    "unitPrice": {
+    "unit_price": {
       "type": "decimal",
       "required": true
     }

@@ -14,10 +14,13 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-03-09T06:49:50.824Z"
+    "x-generation-date": "2025-03-16T08:40:57.909Z"
   },
   "x-strapi-config": {
-    "plugins": ["upload", "users-permissions"]
+    "plugins": [
+      "upload",
+      "users-permissions"
+    ]
   },
   "servers": [
     {
@@ -99,7 +102,9 @@
             }
           }
         },
-        "tags": ["Company"],
+        "tags": [
+          "Company"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -269,7 +274,9 @@
             }
           }
         },
-        "tags": ["Company"],
+        "tags": [
+          "Company"
+        ],
         "parameters": [],
         "operationId": "post/companies",
         "requestBody": {
@@ -348,7 +355,9 @@
             }
           }
         },
-        "tags": ["Company"],
+        "tags": [
+          "Company"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -426,7 +435,9 @@
             }
           }
         },
-        "tags": ["Company"],
+        "tags": [
+          "Company"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -515,7 +526,9 @@
             }
           }
         },
-        "tags": ["Company"],
+        "tags": [
+          "Company"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -595,7 +608,9 @@
             }
           }
         },
-        "tags": ["Invoice"],
+        "tags": [
+          "Invoice"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -765,7 +780,9 @@
             }
           }
         },
-        "tags": ["Invoice"],
+        "tags": [
+          "Invoice"
+        ],
         "parameters": [],
         "operationId": "post/invoices",
         "requestBody": {
@@ -844,7 +861,9 @@
             }
           }
         },
-        "tags": ["Invoice"],
+        "tags": [
+          "Invoice"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -922,7 +941,9 @@
             }
           }
         },
-        "tags": ["Invoice"],
+        "tags": [
+          "Invoice"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1011,7 +1032,9 @@
             }
           }
         },
-        "tags": ["Invoice"],
+        "tags": [
+          "Invoice"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1091,7 +1114,9 @@
             }
           }
         },
-        "tags": ["Payment"],
+        "tags": [
+          "Payment"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -1261,7 +1286,9 @@
             }
           }
         },
-        "tags": ["Payment"],
+        "tags": [
+          "Payment"
+        ],
         "parameters": [],
         "operationId": "post/payments",
         "requestBody": {
@@ -1340,7 +1367,9 @@
             }
           }
         },
-        "tags": ["Payment"],
+        "tags": [
+          "Payment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1418,7 +1447,9 @@
             }
           }
         },
-        "tags": ["Payment"],
+        "tags": [
+          "Payment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1507,7 +1538,9 @@
             }
           }
         },
-        "tags": ["Payment"],
+        "tags": [
+          "Payment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1587,7 +1620,9 @@
             }
           }
         },
-        "tags": ["Purchase"],
+        "tags": [
+          "Purchase"
+        ],
         "parameters": [
           {
             "name": "sort",
@@ -1757,7 +1792,9 @@
             }
           }
         },
-        "tags": ["Purchase"],
+        "tags": [
+          "Purchase"
+        ],
         "parameters": [],
         "operationId": "post/purchases",
         "requestBody": {
@@ -1836,7 +1873,9 @@
             }
           }
         },
-        "tags": ["Purchase"],
+        "tags": [
+          "Purchase"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1914,7 +1953,9 @@
             }
           }
         },
-        "tags": ["Purchase"],
+        "tags": [
+          "Purchase"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2003,7 +2044,9 @@
             }
           }
         },
-        "tags": ["Purchase"],
+        "tags": [
+          "Purchase"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2038,14 +2081,18 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "requestBody": {
           "description": "Upload files",
           "required": true,
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": ["files"],
+                "required": [
+                  "files"
+                ],
                 "type": "object",
                 "properties": {
                   "path": {
@@ -2108,7 +2155,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "requestBody": {
           "description": "Upload files",
           "required": true,
@@ -2144,7 +2193,9 @@
     },
     "/upload/files": {
       "get": {
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "responses": {
           "200": {
             "description": "Get a list of files",
@@ -2176,7 +2227,9 @@
             }
           }
         ],
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "responses": {
           "200": {
             "description": "Get a specific file",
@@ -2203,7 +2256,9 @@
             }
           }
         ],
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "responses": {
           "200": {
             "description": "Delete a file",
@@ -2232,7 +2287,9 @@
             }
           }
         ],
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Login with a provider",
         "description": "Redirects to provider login before being redirect to /auth/{provider}/callback",
         "responses": {
@@ -2254,7 +2311,9 @@
     },
     "/auth/local": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Local login",
         "description": "Returns a jwt token and user info",
         "requestBody": {
@@ -2305,7 +2364,9 @@
     },
     "/auth/local/register": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Register a user",
         "description": "Returns a jwt token and user info",
         "requestBody": {
@@ -2360,7 +2421,9 @@
     },
     "/auth/{provider}/callback": {
       "get": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Default Callback from provider auth",
         "parameters": [
           {
@@ -2399,7 +2462,9 @@
     },
     "/auth/forgot-password": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Send rest password email",
         "requestBody": {
           "required": true,
@@ -2429,7 +2494,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -2451,7 +2518,9 @@
     },
     "/auth/reset-password": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Rest user password",
         "requestBody": {
           "required": true,
@@ -2505,7 +2574,9 @@
     },
     "/auth/change-password": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Update user's own password",
         "requestBody": {
           "required": true,
@@ -2559,7 +2630,9 @@
     },
     "/auth/email-confirmation": {
       "get": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Confirm user email",
         "parameters": [
           {
@@ -2590,7 +2663,9 @@
     },
     "/auth/send-email-confirmation": {
       "post": {
-        "tags": ["Users-Permissions - Auth"],
+        "tags": [
+          "Users-Permissions - Auth"
+        ],
         "summary": "Send confirmation email",
         "requestBody": {
           "required": true,
@@ -2620,7 +2695,9 @@
                     },
                     "sent": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -2642,7 +2719,9 @@
     },
     "/users-permissions/permissions": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get default generated permissions",
         "responses": {
           "200": {
@@ -2711,7 +2790,9 @@
     },
     "/users-permissions/roles": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "List roles",
         "responses": {
           "200": {
@@ -2770,7 +2851,9 @@
         }
       },
       "post": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Create a role",
         "requestBody": {
           "$ref": "#/components/requestBodies/Users-Permissions-RoleRequest"
@@ -2785,7 +2868,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -2807,7 +2892,9 @@
     },
     "/users-permissions/roles/{id}": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get a role",
         "parameters": [
           {
@@ -2872,7 +2959,9 @@
     },
     "/users-permissions/roles/{role}": {
       "put": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Update a role",
         "parameters": [
           {
@@ -2898,7 +2987,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -2918,7 +3009,9 @@
         }
       },
       "delete": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Delete a role",
         "parameters": [
           {
@@ -2941,7 +3034,9 @@
                   "properties": {
                     "ok": {
                       "type": "string",
-                      "enum": [true]
+                      "enum": [
+                        true
+                      ]
                     }
                   }
                 }
@@ -2963,7 +3058,9 @@
     },
     "/users": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get list of users",
         "responses": {
           "200": {
@@ -3004,7 +3101,9 @@
         }
       },
       "post": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Create a user",
         "requestBody": {
           "required": true,
@@ -3012,7 +3111,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["username", "email", "password"],
+                "required": [
+                  "username",
+                  "email",
+                  "password"
+                ],
                 "properties": {
                   "email": {
                     "type": "string"
@@ -3089,7 +3192,9 @@
     },
     "/users/{id}": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get a user",
         "parameters": [
           {
@@ -3136,7 +3241,9 @@
         }
       },
       "put": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Update a user",
         "parameters": [
           {
@@ -3155,7 +3262,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["username", "email", "password"],
+                "required": [
+                  "username",
+                  "email",
+                  "password"
+                ],
                 "properties": {
                   "email": {
                     "type": "string"
@@ -3230,7 +3341,9 @@
         }
       },
       "delete": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Delete a user",
         "parameters": [
           {
@@ -3283,7 +3396,9 @@
     },
     "/users/me": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get authenticated user info",
         "responses": {
           "200": {
@@ -3321,7 +3436,9 @@
     },
     "/users/count": {
       "get": {
-        "tags": ["Users-Permissions - Users & Roles"],
+        "tags": [
+          "Users-Permissions - Users & Roles"
+        ],
         "summary": "Get user count",
         "responses": {
           "200": {
@@ -3360,7 +3477,9 @@
     "schemas": {
       "Error": {
         "type": "object",
-        "required": ["error"],
+        "required": [
+          "error"
+        ],
         "properties": {
           "data": {
             "nullable": true,
@@ -3397,49 +3516,29 @@
       },
       "CompanyRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
             "required": [
-              "code",
               "name",
-              "gstNo",
-              "billingAddress",
-              "shippingAddress"
+              "gst_number",
+              "address"
             ],
             "type": "object",
             "properties": {
-              "code": {
-                "type": "string"
-              },
               "name": {
                 "type": "string"
               },
-              "gstNo": {
+              "gst_number": {
                 "type": "string"
               },
-              "billingAddress": {
+              "address": {
                 "$ref": "#/components/schemas/AddressFullAddressComponent"
               },
-              "shippingAddress": {
-                "$ref": "#/components/schemas/AddressFullAddressComponent"
-              },
-              "paymentTerms": {
+              "payment_terms": {
                 "type": "string"
-              },
-              "invoices": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
-                      "type": "integer"
-                    },
-                    {
-                      "type": "string"
-                    }
-                  ],
-                  "example": "string or id"
-                }
               },
               "payments": {
                 "type": "array",
@@ -3456,6 +3555,34 @@
                 }
               },
               "purchases": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
+              },
+              "billed_invoices": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
+              },
+              "shipped_invoices": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -3528,11 +3655,9 @@
       "Company": {
         "type": "object",
         "required": [
-          "code",
           "name",
-          "gstNo",
-          "billingAddress",
-          "shippingAddress"
+          "gst_number",
+          "address"
         ],
         "properties": {
           "id": {
@@ -3541,25 +3666,19 @@
           "documentId": {
             "type": "string"
           },
-          "code": {
-            "type": "string"
-          },
           "name": {
             "type": "string"
           },
-          "gstNo": {
+          "gst_number": {
             "type": "string"
           },
-          "billingAddress": {
+          "address": {
             "$ref": "#/components/schemas/AddressFullAddressComponent"
           },
-          "shippingAddress": {
-            "$ref": "#/components/schemas/AddressFullAddressComponent"
-          },
-          "paymentTerms": {
+          "payment_terms": {
             "type": "string"
           },
-          "invoices": {
+          "payments": {
             "type": "array",
             "items": {
               "type": "object",
@@ -3568,9 +3687,6 @@
                   "type": "number"
                 },
                 "documentId": {
-                  "type": "string"
-                },
-                "invoiceNumber": {
                   "type": "string"
                 },
                 "date": {
@@ -3586,25 +3702,19 @@
                     "documentId": {
                       "type": "string"
                     },
-                    "code": {
-                      "type": "string"
-                    },
                     "name": {
                       "type": "string"
                     },
-                    "gstNo": {
+                    "gst_number": {
                       "type": "string"
                     },
-                    "billingAddress": {
+                    "address": {
                       "$ref": "#/components/schemas/AddressFullAddressComponent"
                     },
-                    "shippingAddress": {
-                      "$ref": "#/components/schemas/AddressFullAddressComponent"
-                    },
-                    "paymentTerms": {
+                    "payment_terms": {
                       "type": "string"
                     },
-                    "invoices": {
+                    "payments": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -3618,7 +3728,7 @@
                         }
                       }
                     },
-                    "payments": {
+                    "purchases": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -3633,29 +3743,30 @@
                             "type": "string",
                             "format": "date"
                           },
-                          "company": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
+                          "invoiceNo": {
+                            "type": "string"
                           },
-                          "amount": {
+                          "taxableAmount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "paymentMethod": {
-                            "type": "string",
-                            "enum": ["cash", "cheque", "net-banking", "upi"]
+                          "cgstAmount": {
+                            "type": "number",
+                            "format": "float"
                           },
-                          "receivedTo": {
-                            "type": "string"
+                          "sgstAmount": {
+                            "type": "number",
+                            "format": "float"
                           },
-                          "invoice": {
+                          "igstAmount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "totalValue": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "company": {
                             "type": "object",
                             "properties": {
                               "id": {
@@ -3972,7 +4083,7 @@
                         }
                       }
                     },
-                    "purchases": {
+                    "billed_invoices": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -3983,34 +4094,90 @@
                           "documentId": {
                             "type": "string"
                           },
+                          "invoice_number": {
+                            "type": "string"
+                          },
                           "date": {
                             "type": "string",
                             "format": "date"
                           },
-                          "invoiceNo": {
+                          "eway_bill_number": {
                             "type": "string"
                           },
-                          "taxableAmount": {
+                          "purchase_order": {
+                            "type": "string"
+                          },
+                          "vehicle_number": {
+                            "type": "string"
+                          },
+                          "items": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
+                            }
+                          },
+                          "total_quantity": {
                             "type": "number",
                             "format": "float"
                           },
-                          "cgstAmount": {
+                          "total_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "sgstAmount": {
+                          "transport_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "igstAmount": {
+                          "taxable_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "totalValue": {
+                          "sgst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "company": {
+                          "cgst_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "igst_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "round_off_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "invoice_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "payments": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "documentId": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "bill_to_company": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "ship_to_company": {
                             "type": "object",
                             "properties": {
                               "id": {
@@ -4075,6 +4242,20 @@
                         }
                       }
                     },
+                    "shipped_invoices": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -4128,68 +4309,30 @@
                     }
                   }
                 },
-                "ewayBillNo": {
+                "amount": {
+                  "type": "number",
+                  "format": "float"
+                },
+                "paymentMethod": {
+                  "type": "string",
+                  "enum": [
+                    "cash",
+                    "cheque",
+                    "net-banking",
+                    "upi"
+                  ]
+                },
+                "receivedTo": {
                   "type": "string"
                 },
-                "purchaseOrder": {
-                  "type": "string"
-                },
-                "vehicleNo": {
-                  "type": "string"
-                },
-                "items": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
-                  }
-                },
-                "totalQuantity": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "totalAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "transportAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "taxableAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "sgstAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "cgstAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "igstAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "roundOffAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "invoiceAmount": {
-                  "type": "number",
-                  "format": "float"
-                },
-                "payments": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "number"
-                      },
-                      "documentId": {
-                        "type": "string"
-                      }
+                "invoice": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
                     }
                   }
                 },
@@ -4247,7 +4390,7 @@
               }
             }
           },
-          "payments": {
+          "purchases": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4261,7 +4404,21 @@
               }
             }
           },
-          "purchases": {
+          "billed_invoices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "documentId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "shipped_invoices": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4345,19 +4502,19 @@
           "id": {
             "type": "number"
           },
-          "addressLine1": {
+          "address_line_1": {
             "type": "string"
           },
-          "addressLine2": {
+          "address_line_2": {
             "type": "string"
           },
-          "addressLine3": {
+          "address_line_3": {
             "type": "string"
           },
           "state": {
             "type": "string"
           },
-          "stateCode": {
+          "state_code": {
             "type": "integer"
           }
         }
@@ -4371,16 +4528,16 @@
           "title": {
             "type": "string"
           },
-          "description1": {
+          "description_line_1": {
             "type": "string"
           },
-          "description2": {
+          "description_line_2": {
             "type": "string"
           },
-          "description3": {
+          "description_line_3": {
             "type": "string"
           },
-          "hsnCode": {
+          "hsn_code": {
             "type": "string"
           },
           "quantity": {
@@ -4394,7 +4551,7 @@
             "type": "number",
             "format": "float"
           },
-          "unitPrice": {
+          "unit_price": {
             "type": "number",
             "format": "float"
           }
@@ -4402,49 +4559,41 @@
       },
       "InvoiceRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
             "required": [
-              "invoiceNumber",
+              "invoice_number",
               "date",
+              "vehicle_number",
               "items",
-              "totalQuantity",
-              "totalAmount",
-              "taxableAmount",
-              "sgstAmount",
-              "cgstAmount",
-              "igstAmount",
-              "roundOffAmount",
-              "invoiceAmount"
+              "total_quantity",
+              "total_amount",
+              "taxable_amount",
+              "sgst_amount",
+              "cgst_amount",
+              "igst_amount",
+              "round_off_amount",
+              "invoice_amount"
             ],
             "type": "object",
             "properties": {
-              "invoiceNumber": {
+              "invoice_number": {
                 "type": "string"
               },
               "date": {
                 "type": "string",
                 "format": "date"
               },
-              "company": {
-                "oneOf": [
-                  {
-                    "type": "integer"
-                  },
-                  {
-                    "type": "string"
-                  }
-                ],
-                "example": "string or id"
-              },
-              "ewayBillNo": {
+              "eway_bill_number": {
                 "type": "string"
               },
-              "purchaseOrder": {
+              "purchase_order": {
                 "type": "string"
               },
-              "vehicleNo": {
+              "vehicle_number": {
                 "type": "string"
               },
               "items": {
@@ -4453,39 +4602,39 @@
                   "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
                 }
               },
-              "totalQuantity": {
+              "total_quantity": {
                 "type": "number",
                 "format": "float"
               },
-              "totalAmount": {
+              "total_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "transportAmount": {
+              "transport_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "taxableAmount": {
+              "taxable_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "sgstAmount": {
+              "sgst_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "cgstAmount": {
+              "cgst_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "igstAmount": {
+              "igst_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "roundOffAmount": {
+              "round_off_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "invoiceAmount": {
+              "invoice_amount": {
                 "type": "number",
                 "format": "float"
               },
@@ -4502,6 +4651,28 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "bill_to_company": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": "string or id"
+              },
+              "ship_to_company": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": "string or id"
               },
               "locale": {
                 "type": "string"
@@ -4562,17 +4733,18 @@
       "Invoice": {
         "type": "object",
         "required": [
-          "invoiceNumber",
+          "invoice_number",
           "date",
+          "vehicle_number",
           "items",
-          "totalQuantity",
-          "totalAmount",
-          "taxableAmount",
-          "sgstAmount",
-          "cgstAmount",
-          "igstAmount",
-          "roundOffAmount",
-          "invoiceAmount"
+          "total_quantity",
+          "total_amount",
+          "taxable_amount",
+          "sgst_amount",
+          "cgst_amount",
+          "igst_amount",
+          "round_off_amount",
+          "invoice_amount"
         ],
         "properties": {
           "id": {
@@ -4581,43 +4753,80 @@
           "documentId": {
             "type": "string"
           },
-          "invoiceNumber": {
+          "invoice_number": {
             "type": "string"
           },
           "date": {
             "type": "string",
             "format": "date"
           },
-          "company": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "number"
-              },
-              "documentId": {
-                "type": "string"
-              },
-              "code": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "gstNo": {
-                "type": "string"
-              },
-              "billingAddress": {
-                "$ref": "#/components/schemas/AddressFullAddressComponent"
-              },
-              "shippingAddress": {
-                "$ref": "#/components/schemas/AddressFullAddressComponent"
-              },
-              "paymentTerms": {
-                "type": "string"
-              },
-              "invoices": {
-                "type": "array",
-                "items": {
+          "eway_bill_number": {
+            "type": "string"
+          },
+          "purchase_order": {
+            "type": "string"
+          },
+          "vehicle_number": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
+            }
+          },
+          "total_quantity": {
+            "type": "number",
+            "format": "float"
+          },
+          "total_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "transport_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "taxable_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "sgst_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "cgst_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "igst_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "round_off_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "invoice_amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "payments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "documentId": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "company": {
                   "type": "object",
                   "properties": {
                     "id": {
@@ -4626,76 +4835,33 @@
                     "documentId": {
                       "type": "string"
                     },
-                    "invoiceNumber": {
+                    "name": {
                       "type": "string"
                     },
-                    "date": {
-                      "type": "string",
-                      "format": "date"
+                    "gst_number": {
+                      "type": "string"
                     },
-                    "company": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
+                    "address": {
+                      "$ref": "#/components/schemas/AddressFullAddressComponent"
+                    },
+                    "payment_terms": {
+                      "type": "string"
+                    },
+                    "payments": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          }
                         }
                       }
                     },
-                    "ewayBillNo": {
-                      "type": "string"
-                    },
-                    "purchaseOrder": {
-                      "type": "string"
-                    },
-                    "vehicleNo": {
-                      "type": "string"
-                    },
-                    "items": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
-                      }
-                    },
-                    "totalQuantity": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "totalAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "transportAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "taxableAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "sgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "cgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "igstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "roundOffAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "invoiceAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "payments": {
+                    "purchases": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -4710,29 +4876,30 @@
                             "type": "string",
                             "format": "date"
                           },
-                          "company": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
+                          "invoiceNo": {
+                            "type": "string"
                           },
-                          "amount": {
+                          "taxableAmount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "paymentMethod": {
-                            "type": "string",
-                            "enum": ["cash", "cheque", "net-banking", "upi"]
+                          "cgstAmount": {
+                            "type": "number",
+                            "format": "float"
                           },
-                          "receivedTo": {
-                            "type": "string"
+                          "sgstAmount": {
+                            "type": "number",
+                            "format": "float"
                           },
-                          "invoice": {
+                          "igstAmount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "totalValue": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "company": {
                             "type": "object",
                             "properties": {
                               "id": {
@@ -5049,6 +5216,179 @@
                         }
                       }
                     },
+                    "billed_invoices": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          },
+                          "invoice_number": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "eway_bill_number": {
+                            "type": "string"
+                          },
+                          "purchase_order": {
+                            "type": "string"
+                          },
+                          "vehicle_number": {
+                            "type": "string"
+                          },
+                          "items": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
+                            }
+                          },
+                          "total_quantity": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "total_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "transport_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "taxable_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "sgst_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "cgst_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "igst_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "round_off_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "invoice_amount": {
+                            "type": "number",
+                            "format": "float"
+                          },
+                          "payments": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "documentId": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "bill_to_company": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "ship_to_company": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "createdAt": {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          "updatedAt": {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          "publishedAt": {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          "createdBy": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "updatedBy": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "localizations": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "documentId": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "shipped_invoices": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "documentId": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -5101,11 +5441,24 @@
                       }
                     }
                   }
-                }
-              },
-              "payments": {
-                "type": "array",
-                "items": {
+                },
+                "amount": {
+                  "type": "number",
+                  "format": "float"
+                },
+                "paymentMethod": {
+                  "type": "string",
+                  "enum": [
+                    "cash",
+                    "cheque",
+                    "net-banking",
+                    "upi"
+                  ]
+                },
+                "receivedTo": {
+                  "type": "string"
+                },
+                "invoice": {
                   "type": "object",
                   "properties": {
                     "id": {
@@ -5115,11 +5468,20 @@
                       "type": "string"
                     }
                   }
-                }
-              },
-              "purchases": {
-                "type": "array",
-                "items": {
+                },
+                "createdAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "updatedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "publishedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "createdBy": {
                   "type": "object",
                   "properties": {
                     "id": {
@@ -5127,139 +5489,10 @@
                     },
                     "documentId": {
                       "type": "string"
-                    },
-                    "date": {
-                      "type": "string",
-                      "format": "date"
-                    },
-                    "invoiceNo": {
-                      "type": "string"
-                    },
-                    "taxableAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "cgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "sgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "igstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "totalValue": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "company": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "createdAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "updatedAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "publishedAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "createdBy": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "updatedBy": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "locale": {
-                      "type": "string"
-                    },
-                    "localizations": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          }
-                        }
-                      }
                     }
                   }
-                }
-              },
-              "createdAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "updatedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "publishedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "createdBy": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "updatedBy": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "locale": {
-                "type": "string"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
+                },
+                "updatedBy": {
                   "type": "object",
                   "properties": {
                     "id": {
@@ -5267,74 +5500,48 @@
                     },
                     "documentId": {
                       "type": "string"
+                    }
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "documentId": {
+                        "type": "string"
+                      }
                     }
                   }
                 }
               }
             }
           },
-          "ewayBillNo": {
-            "type": "string"
-          },
-          "purchaseOrder": {
-            "type": "string"
-          },
-          "vehicleNo": {
-            "type": "string"
-          },
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
+          "bill_to_company": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "documentId": {
+                "type": "string"
+              }
             }
           },
-          "totalQuantity": {
-            "type": "number",
-            "format": "float"
-          },
-          "totalAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "transportAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "taxableAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "sgstAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "cgstAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "igstAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "roundOffAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "invoiceAmount": {
-            "type": "number",
-            "format": "float"
-          },
-          "payments": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "number"
-                },
-                "documentId": {
-                  "type": "string"
-                }
+          "ship_to_company": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "documentId": {
+                "type": "string"
               }
             }
           },
@@ -5404,10 +5611,15 @@
       },
       "PaymentRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
-            "required": ["date", "amount"],
+            "required": [
+              "date",
+              "amount"
+            ],
             "type": "object",
             "properties": {
               "date": {
@@ -5431,7 +5643,12 @@
               },
               "paymentMethod": {
                 "type": "string",
-                "enum": ["cash", "cheque", "net-banking", "upi"]
+                "enum": [
+                  "cash",
+                  "cheque",
+                  "net-banking",
+                  "upi"
+                ]
               },
               "receivedTo": {
                 "type": "string"
@@ -5505,7 +5722,10 @@
       },
       "Payment": {
         "type": "object",
-        "required": ["date", "amount"],
+        "required": [
+          "date",
+          "amount"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -5526,25 +5746,19 @@
               "documentId": {
                 "type": "string"
               },
-              "code": {
-                "type": "string"
-              },
               "name": {
                 "type": "string"
               },
-              "gstNo": {
+              "gst_number": {
                 "type": "string"
               },
-              "billingAddress": {
+              "address": {
                 "$ref": "#/components/schemas/AddressFullAddressComponent"
               },
-              "shippingAddress": {
-                "$ref": "#/components/schemas/AddressFullAddressComponent"
-              },
-              "paymentTerms": {
+              "payment_terms": {
                 "type": "string"
               },
-              "invoices": {
+              "payments": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -5553,9 +5767,6 @@
                       "type": "number"
                     },
                     "documentId": {
-                      "type": "string"
-                    },
-                    "invoiceNumber": {
                       "type": "string"
                     },
                     "date": {
@@ -5573,73 +5784,92 @@
                         }
                       }
                     },
-                    "ewayBillNo": {
+                    "amount": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "paymentMethod": {
+                      "type": "string",
+                      "enum": [
+                        "cash",
+                        "cheque",
+                        "net-banking",
+                        "upi"
+                      ]
+                    },
+                    "receivedTo": {
                       "type": "string"
                     },
-                    "purchaseOrder": {
-                      "type": "string"
-                    },
-                    "vehicleNo": {
-                      "type": "string"
-                    },
-                    "items": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
-                      }
-                    },
-                    "totalQuantity": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "totalAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "transportAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "taxableAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "sgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "cgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "igstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "roundOffAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "invoiceAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "payments": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          },
-                          "date": {
-                            "type": "string",
-                            "format": "date"
-                          },
-                          "company": {
+                    "invoice": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number"
+                        },
+                        "documentId": {
+                          "type": "string"
+                        },
+                        "invoice_number": {
+                          "type": "string"
+                        },
+                        "date": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "eway_bill_number": {
+                          "type": "string"
+                        },
+                        "purchase_order": {
+                          "type": "string"
+                        },
+                        "vehicle_number": {
+                          "type": "string"
+                        },
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
+                          }
+                        },
+                        "total_quantity": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "total_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "transport_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "taxable_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "sgst_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "cgst_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "igst_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "round_off_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "invoice_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "payments": {
+                          "type": "array",
+                          "items": {
                             "type": "object",
                             "properties": {
                               "id": {
@@ -5649,204 +5879,96 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "amount": {
-                            "type": "number",
-                            "format": "float"
-                          },
-                          "paymentMethod": {
-                            "type": "string",
-                            "enum": ["cash", "cheque", "net-banking", "upi"]
-                          },
-                          "receivedTo": {
-                            "type": "string"
-                          },
-                          "invoice": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
+                          }
+                        },
+                        "bill_to_company": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
                             }
-                          },
-                          "createdAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "updatedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "publishedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "createdBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              },
-                              "firstname": {
-                                "type": "string"
-                              },
-                              "lastname": {
-                                "type": "string"
-                              },
-                              "username": {
-                                "type": "string"
-                              },
-                              "email": {
-                                "type": "string",
-                                "format": "email"
-                              },
-                              "resetPasswordToken": {
-                                "type": "string"
-                              },
-                              "registrationToken": {
-                                "type": "string"
-                              },
-                              "isActive": {
-                                "type": "boolean"
-                              },
-                              "roles": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "code": {
-                                      "type": "string"
-                                    },
-                                    "description": {
-                                      "type": "string"
-                                    },
-                                    "users": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "number"
-                                          },
-                                          "documentId": {
-                                            "type": "string"
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "permissions": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "number"
-                                          },
-                                          "documentId": {
-                                            "type": "string"
-                                          },
-                                          "action": {
-                                            "type": "string"
-                                          },
-                                          "actionParameters": {},
-                                          "subject": {
-                                            "type": "string"
-                                          },
-                                          "properties": {},
-                                          "conditions": {},
-                                          "role": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "documentId": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "createdAt": {
-                                            "type": "string",
-                                            "format": "date-time"
-                                          },
-                                          "updatedAt": {
-                                            "type": "string",
-                                            "format": "date-time"
-                                          },
-                                          "publishedAt": {
-                                            "type": "string",
-                                            "format": "date-time"
-                                          },
-                                          "createdBy": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "documentId": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "updatedBy": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "documentId": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "locale": {
-                                            "type": "string"
-                                          },
-                                          "localizations": {
-                                            "type": "array",
-                                            "items": {
-                                              "type": "object",
-                                              "properties": {
-                                                "id": {
-                                                  "type": "number"
-                                                },
-                                                "documentId": {
-                                                  "type": "string"
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "createdAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "createdBy": {
+                          }
+                        },
+                        "ship_to_company": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "publishedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "createdBy": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            },
+                            "firstname": {
+                              "type": "string"
+                            },
+                            "lastname": {
+                              "type": "string"
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "email": {
+                              "type": "string",
+                              "format": "email"
+                            },
+                            "resetPasswordToken": {
+                              "type": "string"
+                            },
+                            "registrationToken": {
+                              "type": "string"
+                            },
+                            "isActive": {
+                              "type": "boolean"
+                            },
+                            "roles": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "code": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  },
+                                  "users": {
+                                    "type": "array",
+                                    "items": {
                                       "type": "object",
                                       "properties": {
                                         "id": {
@@ -5856,8 +5978,133 @@
                                           "type": "string"
                                         }
                                       }
-                                    },
-                                    "updatedBy": {
+                                    }
+                                  },
+                                  "permissions": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "number"
+                                        },
+                                        "documentId": {
+                                          "type": "string"
+                                        },
+                                        "action": {
+                                          "type": "string"
+                                        },
+                                        "actionParameters": {},
+                                        "subject": {
+                                          "type": "string"
+                                        },
+                                        "properties": {},
+                                        "conditions": {},
+                                        "role": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "documentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        },
+                                        "createdAt": {
+                                          "type": "string",
+                                          "format": "date-time"
+                                        },
+                                        "updatedAt": {
+                                          "type": "string",
+                                          "format": "date-time"
+                                        },
+                                        "publishedAt": {
+                                          "type": "string",
+                                          "format": "date-time"
+                                        },
+                                        "createdBy": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "documentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        },
+                                        "updatedBy": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "documentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        },
+                                        "locale": {
+                                          "type": "string"
+                                        },
+                                        "localizations": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "documentId": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "createdAt": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "updatedAt": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "publishedAt": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "createdBy": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "number"
+                                      },
+                                      "documentId": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "updatedBy": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "number"
+                                      },
+                                      "documentId": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "locale": {
+                                    "type": "string"
+                                  },
+                                  "localizations": {
+                                    "type": "array",
+                                    "items": {
                                       "type": "object",
                                       "properties": {
                                         "id": {
@@ -5867,103 +6114,30 @@
                                           "type": "string"
                                         }
                                       }
-                                    },
-                                    "locale": {
-                                      "type": "string"
-                                    },
-                                    "localizations": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "number"
-                                          },
-                                          "documentId": {
-                                            "type": "string"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "blocked": {
-                                "type": "boolean"
-                              },
-                              "preferedLanguage": {
-                                "type": "string"
-                              },
-                              "createdAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "updatedAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "publishedAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "createdBy": {
-                                "type": "object",
-                                "properties": {
-                                  "id": {
-                                    "type": "number"
-                                  },
-                                  "documentId": {
-                                    "type": "string"
-                                  }
-                                }
-                              },
-                              "updatedBy": {
-                                "type": "object",
-                                "properties": {
-                                  "id": {
-                                    "type": "number"
-                                  },
-                                  "documentId": {
-                                    "type": "string"
-                                  }
-                                }
-                              },
-                              "locale": {
-                                "type": "string"
-                              },
-                              "localizations": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
                                     }
                                   }
                                 }
                               }
-                            }
-                          },
-                          "updatedBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "locale": {
-                            "type": "string"
-                          },
-                          "localizations": {
-                            "type": "array",
-                            "items": {
+                            },
+                            "blocked": {
+                              "type": "boolean"
+                            },
+                            "preferedLanguage": {
+                              "type": "string"
+                            },
+                            "createdAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "updatedAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "publishedAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "createdBy": {
                               "type": "object",
                               "properties": {
                                 "id": {
@@ -5972,6 +6146,62 @@
                                 "documentId": {
                                   "type": "string"
                                 }
+                              }
+                            },
+                            "updatedBy": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "documentId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "locale": {
+                              "type": "string"
+                            },
+                            "localizations": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "updatedBy": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "locale": {
+                          "type": "string"
+                        },
+                        "localizations": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
                               }
                             }
                           }
@@ -6028,20 +6258,6 @@
                           }
                         }
                       }
-                    }
-                  }
-                }
-              },
-              "payments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
                     }
                   }
                 }
@@ -6149,6 +6365,34 @@
                   }
                 }
               },
+              "billed_invoices": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "shipped_invoices": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -6208,7 +6452,12 @@
           },
           "paymentMethod": {
             "type": "string",
-            "enum": ["cash", "cheque", "net-banking", "upi"]
+            "enum": [
+              "cash",
+              "cheque",
+              "net-banking",
+              "upi"
+            ]
           },
           "receivedTo": {
             "type": "string"
@@ -6290,7 +6539,9 @@
       },
       "PurchaseRequest": {
         "type": "object",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "properties": {
           "data": {
             "required": [
@@ -6452,25 +6703,19 @@
               "documentId": {
                 "type": "string"
               },
-              "code": {
-                "type": "string"
-              },
               "name": {
                 "type": "string"
               },
-              "gstNo": {
+              "gst_number": {
                 "type": "string"
               },
-              "billingAddress": {
+              "address": {
                 "$ref": "#/components/schemas/AddressFullAddressComponent"
               },
-              "shippingAddress": {
-                "$ref": "#/components/schemas/AddressFullAddressComponent"
-              },
-              "paymentTerms": {
+              "payment_terms": {
                 "type": "string"
               },
-              "invoices": {
+              "payments": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -6479,9 +6724,6 @@
                       "type": "number"
                     },
                     "documentId": {
-                      "type": "string"
-                    },
-                    "invoiceNumber": {
                       "type": "string"
                     },
                     "date": {
@@ -6499,73 +6741,92 @@
                         }
                       }
                     },
-                    "ewayBillNo": {
+                    "amount": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "paymentMethod": {
+                      "type": "string",
+                      "enum": [
+                        "cash",
+                        "cheque",
+                        "net-banking",
+                        "upi"
+                      ]
+                    },
+                    "receivedTo": {
                       "type": "string"
                     },
-                    "purchaseOrder": {
-                      "type": "string"
-                    },
-                    "vehicleNo": {
-                      "type": "string"
-                    },
-                    "items": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
-                      }
-                    },
-                    "totalQuantity": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "totalAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "transportAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "taxableAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "sgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "cgstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "igstAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "roundOffAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "invoiceAmount": {
-                      "type": "number",
-                      "format": "float"
-                    },
-                    "payments": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          },
-                          "date": {
-                            "type": "string",
-                            "format": "date"
-                          },
-                          "company": {
+                    "invoice": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number"
+                        },
+                        "documentId": {
+                          "type": "string"
+                        },
+                        "invoice_number": {
+                          "type": "string"
+                        },
+                        "date": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "eway_bill_number": {
+                          "type": "string"
+                        },
+                        "purchase_order": {
+                          "type": "string"
+                        },
+                        "vehicle_number": {
+                          "type": "string"
+                        },
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/components/schemas/InvoiceInvoiceItemComponent"
+                          }
+                        },
+                        "total_quantity": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "total_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "transport_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "taxable_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "sgst_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "cgst_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "igst_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "round_off_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "invoice_amount": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "payments": {
+                          "type": "array",
+                          "items": {
                             "type": "object",
                             "properties": {
                               "id": {
@@ -6575,204 +6836,96 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "amount": {
-                            "type": "number",
-                            "format": "float"
-                          },
-                          "paymentMethod": {
-                            "type": "string",
-                            "enum": ["cash", "cheque", "net-banking", "upi"]
-                          },
-                          "receivedTo": {
-                            "type": "string"
-                          },
-                          "invoice": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
+                          }
+                        },
+                        "bill_to_company": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
                             }
-                          },
-                          "createdAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "updatedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "publishedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "createdBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              },
-                              "firstname": {
-                                "type": "string"
-                              },
-                              "lastname": {
-                                "type": "string"
-                              },
-                              "username": {
-                                "type": "string"
-                              },
-                              "email": {
-                                "type": "string",
-                                "format": "email"
-                              },
-                              "resetPasswordToken": {
-                                "type": "string"
-                              },
-                              "registrationToken": {
-                                "type": "string"
-                              },
-                              "isActive": {
-                                "type": "boolean"
-                              },
-                              "roles": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "code": {
-                                      "type": "string"
-                                    },
-                                    "description": {
-                                      "type": "string"
-                                    },
-                                    "users": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "number"
-                                          },
-                                          "documentId": {
-                                            "type": "string"
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "permissions": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "number"
-                                          },
-                                          "documentId": {
-                                            "type": "string"
-                                          },
-                                          "action": {
-                                            "type": "string"
-                                          },
-                                          "actionParameters": {},
-                                          "subject": {
-                                            "type": "string"
-                                          },
-                                          "properties": {},
-                                          "conditions": {},
-                                          "role": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "documentId": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "createdAt": {
-                                            "type": "string",
-                                            "format": "date-time"
-                                          },
-                                          "updatedAt": {
-                                            "type": "string",
-                                            "format": "date-time"
-                                          },
-                                          "publishedAt": {
-                                            "type": "string",
-                                            "format": "date-time"
-                                          },
-                                          "createdBy": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "documentId": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "updatedBy": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "documentId": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "locale": {
-                                            "type": "string"
-                                          },
-                                          "localizations": {
-                                            "type": "array",
-                                            "items": {
-                                              "type": "object",
-                                              "properties": {
-                                                "id": {
-                                                  "type": "number"
-                                                },
-                                                "documentId": {
-                                                  "type": "string"
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "createdAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "createdBy": {
+                          }
+                        },
+                        "ship_to_company": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "publishedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "createdBy": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            },
+                            "firstname": {
+                              "type": "string"
+                            },
+                            "lastname": {
+                              "type": "string"
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "email": {
+                              "type": "string",
+                              "format": "email"
+                            },
+                            "resetPasswordToken": {
+                              "type": "string"
+                            },
+                            "registrationToken": {
+                              "type": "string"
+                            },
+                            "isActive": {
+                              "type": "boolean"
+                            },
+                            "roles": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "code": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  },
+                                  "users": {
+                                    "type": "array",
+                                    "items": {
                                       "type": "object",
                                       "properties": {
                                         "id": {
@@ -6782,8 +6935,133 @@
                                           "type": "string"
                                         }
                                       }
-                                    },
-                                    "updatedBy": {
+                                    }
+                                  },
+                                  "permissions": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "number"
+                                        },
+                                        "documentId": {
+                                          "type": "string"
+                                        },
+                                        "action": {
+                                          "type": "string"
+                                        },
+                                        "actionParameters": {},
+                                        "subject": {
+                                          "type": "string"
+                                        },
+                                        "properties": {},
+                                        "conditions": {},
+                                        "role": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "documentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        },
+                                        "createdAt": {
+                                          "type": "string",
+                                          "format": "date-time"
+                                        },
+                                        "updatedAt": {
+                                          "type": "string",
+                                          "format": "date-time"
+                                        },
+                                        "publishedAt": {
+                                          "type": "string",
+                                          "format": "date-time"
+                                        },
+                                        "createdBy": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "documentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        },
+                                        "updatedBy": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "documentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        },
+                                        "locale": {
+                                          "type": "string"
+                                        },
+                                        "localizations": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "documentId": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "createdAt": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "updatedAt": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "publishedAt": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
+                                  "createdBy": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "number"
+                                      },
+                                      "documentId": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "updatedBy": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "number"
+                                      },
+                                      "documentId": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "locale": {
+                                    "type": "string"
+                                  },
+                                  "localizations": {
+                                    "type": "array",
+                                    "items": {
                                       "type": "object",
                                       "properties": {
                                         "id": {
@@ -6793,103 +7071,30 @@
                                           "type": "string"
                                         }
                                       }
-                                    },
-                                    "locale": {
-                                      "type": "string"
-                                    },
-                                    "localizations": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "number"
-                                          },
-                                          "documentId": {
-                                            "type": "string"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "blocked": {
-                                "type": "boolean"
-                              },
-                              "preferedLanguage": {
-                                "type": "string"
-                              },
-                              "createdAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "updatedAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "publishedAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "createdBy": {
-                                "type": "object",
-                                "properties": {
-                                  "id": {
-                                    "type": "number"
-                                  },
-                                  "documentId": {
-                                    "type": "string"
-                                  }
-                                }
-                              },
-                              "updatedBy": {
-                                "type": "object",
-                                "properties": {
-                                  "id": {
-                                    "type": "number"
-                                  },
-                                  "documentId": {
-                                    "type": "string"
-                                  }
-                                }
-                              },
-                              "locale": {
-                                "type": "string"
-                              },
-                              "localizations": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
                                     }
                                   }
                                 }
                               }
-                            }
-                          },
-                          "updatedBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "locale": {
-                            "type": "string"
-                          },
-                          "localizations": {
-                            "type": "array",
-                            "items": {
+                            },
+                            "blocked": {
+                              "type": "boolean"
+                            },
+                            "preferedLanguage": {
+                              "type": "string"
+                            },
+                            "createdAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "updatedAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "publishedAt": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "createdBy": {
                               "type": "object",
                               "properties": {
                                 "id": {
@@ -6898,6 +7103,62 @@
                                 "documentId": {
                                   "type": "string"
                                 }
+                              }
+                            },
+                            "updatedBy": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "documentId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "locale": {
+                              "type": "string"
+                            },
+                            "localizations": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "updatedBy": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "locale": {
+                          "type": "string"
+                        },
+                        "localizations": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
                               }
                             }
                           }
@@ -6954,20 +7215,6 @@
                           }
                         }
                       }
-                    }
-                  }
-                }
-              },
-              "payments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
                     }
                   }
                 }
@@ -7071,6 +7318,34 @@
                           }
                         }
                       }
+                    }
+                  }
+                }
+              },
+              "billed_invoices": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "shipped_invoices": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
                     }
                   }
                 }
