@@ -494,6 +494,7 @@ export interface ApiInvoiceInvoice extends Struct.CollectionTypeSchema {
 export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
   collectionName: 'payments';
   info: {
+    description: '';
     displayName: 'Payment';
     pluralName: 'payments';
     singularName: 'payment';
@@ -515,11 +516,13 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
       'api::payment.payment'
     > &
       Schema.Attribute.Private;
-    paymentMethod: Schema.Attribute.Enumeration<
-      ['cash', 'cheque', 'net-banking', 'upi']
-    >;
+    payment_method: Schema.Attribute.Enumeration<
+      ['cash', 'cheque', 'net-banking', 'upi', 'other']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'upi'>;
     publishedAt: Schema.Attribute.DateTime;
-    receivedTo: Schema.Attribute.String;
+    received_to: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -529,6 +532,7 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
 export interface ApiPurchasePurchase extends Struct.CollectionTypeSchema {
   collectionName: 'purchases';
   info: {
+    description: '';
     displayName: 'Purchase';
     pluralName: 'purchases';
     singularName: 'purchase';
@@ -537,18 +541,30 @@ export interface ApiPurchasePurchase extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    cgstAmount: Schema.Attribute.Decimal &
+    cgst_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      > &
       Schema.Attribute.DefaultTo<0>;
     company: Schema.Attribute.Relation<'manyToOne', 'api::company.company'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date: Schema.Attribute.Date & Schema.Attribute.Required;
-    igstAmount: Schema.Attribute.Decimal &
+    igst_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      > &
       Schema.Attribute.DefaultTo<0>;
-    invoiceNo: Schema.Attribute.String & Schema.Attribute.Required;
+    invoice_number: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -556,11 +572,31 @@ export interface ApiPurchasePurchase extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    sgstAmount: Schema.Attribute.Decimal &
+    sgst_amount: Schema.Attribute.Decimal &
       Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      > &
       Schema.Attribute.DefaultTo<0>;
-    taxableAmount: Schema.Attribute.Decimal & Schema.Attribute.Required;
-    totalValue: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    taxable_amount: Schema.Attribute.Decimal &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    total_amount: Schema.Attribute.Decimal &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

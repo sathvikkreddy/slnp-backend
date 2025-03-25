@@ -4,7 +4,8 @@
   "info": {
     "singularName": "purchase",
     "pluralName": "purchases",
-    "displayName": "Purchase"
+    "displayName": "Purchase",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,32 +15,37 @@
       "type": "date",
       "required": true
     },
-    "invoiceNo": {
+    "invoice_number": {
       "type": "string",
       "required": true
     },
-    "taxableAmount": {
-      "type": "decimal",
-      "required": true
-    },
-    "cgstAmount": {
+    "taxable_amount": {
       "type": "decimal",
       "required": true,
-      "default": 0
+      "min": 1
     },
-    "sgstAmount": {
+    "cgst_amount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "sgst_amount": {
       "type": "decimal",
       "default": 0,
-      "required": true
+      "required": true,
+      "min": 0
     },
-    "igstAmount": {
+    "igst_amount": {
       "type": "decimal",
       "required": true,
-      "default": 0
+      "default": 0,
+      "min": 0
     },
-    "totalValue": {
+    "total_amount": {
       "type": "decimal",
-      "required": true
+      "required": true,
+      "min": 1
     },
     "company": {
       "type": "relation",

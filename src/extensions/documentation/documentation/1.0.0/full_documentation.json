@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-03-16T08:40:57.909Z"
+    "x-generation-date": "2025-03-23T07:36:00.391Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3743,26 +3743,26 @@
                             "type": "string",
                             "format": "date"
                           },
-                          "invoiceNo": {
+                          "invoice_number": {
                             "type": "string"
                           },
-                          "taxableAmount": {
+                          "taxable_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "cgstAmount": {
+                          "cgst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "sgstAmount": {
+                          "sgst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "igstAmount": {
+                          "igst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "totalValue": {
+                          "total_amount": {
                             "type": "number",
                             "format": "float"
                           },
@@ -4313,16 +4313,17 @@
                   "type": "number",
                   "format": "float"
                 },
-                "paymentMethod": {
+                "payment_method": {
                   "type": "string",
                   "enum": [
                     "cash",
                     "cheque",
                     "net-banking",
-                    "upi"
+                    "upi",
+                    "other"
                   ]
                 },
-                "receivedTo": {
+                "received_to": {
                   "type": "string"
                 },
                 "invoice": {
@@ -4876,26 +4877,26 @@
                             "type": "string",
                             "format": "date"
                           },
-                          "invoiceNo": {
+                          "invoice_number": {
                             "type": "string"
                           },
-                          "taxableAmount": {
+                          "taxable_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "cgstAmount": {
+                          "cgst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "sgstAmount": {
+                          "sgst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "igstAmount": {
+                          "igst_amount": {
                             "type": "number",
                             "format": "float"
                           },
-                          "totalValue": {
+                          "total_amount": {
                             "type": "number",
                             "format": "float"
                           },
@@ -5446,16 +5447,17 @@
                   "type": "number",
                   "format": "float"
                 },
-                "paymentMethod": {
+                "payment_method": {
                   "type": "string",
                   "enum": [
                     "cash",
                     "cheque",
                     "net-banking",
-                    "upi"
+                    "upi",
+                    "other"
                   ]
                 },
-                "receivedTo": {
+                "received_to": {
                   "type": "string"
                 },
                 "invoice": {
@@ -5618,7 +5620,8 @@
           "data": {
             "required": [
               "date",
-              "amount"
+              "amount",
+              "payment_method"
             ],
             "type": "object",
             "properties": {
@@ -5641,16 +5644,17 @@
                 "type": "number",
                 "format": "float"
               },
-              "paymentMethod": {
+              "payment_method": {
                 "type": "string",
                 "enum": [
                   "cash",
                   "cheque",
                   "net-banking",
-                  "upi"
+                  "upi",
+                  "other"
                 ]
               },
-              "receivedTo": {
+              "received_to": {
                 "type": "string"
               },
               "invoice": {
@@ -5724,7 +5728,8 @@
         "type": "object",
         "required": [
           "date",
-          "amount"
+          "amount",
+          "payment_method"
         ],
         "properties": {
           "id": {
@@ -5788,16 +5793,17 @@
                       "type": "number",
                       "format": "float"
                     },
-                    "paymentMethod": {
+                    "payment_method": {
                       "type": "string",
                       "enum": [
                         "cash",
                         "cheque",
                         "net-banking",
-                        "upi"
+                        "upi",
+                        "other"
                       ]
                     },
-                    "receivedTo": {
+                    "received_to": {
                       "type": "string"
                     },
                     "invoice": {
@@ -6277,26 +6283,26 @@
                       "type": "string",
                       "format": "date"
                     },
-                    "invoiceNo": {
+                    "invoice_number": {
                       "type": "string"
                     },
-                    "taxableAmount": {
+                    "taxable_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "cgstAmount": {
+                    "cgst_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "sgstAmount": {
+                    "sgst_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "igstAmount": {
+                    "igst_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "totalValue": {
+                    "total_amount": {
                       "type": "number",
                       "format": "float"
                     },
@@ -6450,16 +6456,17 @@
             "type": "number",
             "format": "float"
           },
-          "paymentMethod": {
+          "payment_method": {
             "type": "string",
             "enum": [
               "cash",
               "cheque",
               "net-banking",
-              "upi"
+              "upi",
+              "other"
             ]
           },
-          "receivedTo": {
+          "received_to": {
             "type": "string"
           },
           "invoice": {
@@ -6546,12 +6553,12 @@
           "data": {
             "required": [
               "date",
-              "invoiceNo",
-              "taxableAmount",
-              "cgstAmount",
-              "sgstAmount",
-              "igstAmount",
-              "totalValue"
+              "invoice_number",
+              "taxable_amount",
+              "cgst_amount",
+              "sgst_amount",
+              "igst_amount",
+              "total_amount"
             ],
             "type": "object",
             "properties": {
@@ -6559,26 +6566,26 @@
                 "type": "string",
                 "format": "date"
               },
-              "invoiceNo": {
+              "invoice_number": {
                 "type": "string"
               },
-              "taxableAmount": {
+              "taxable_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "cgstAmount": {
+              "cgst_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "sgstAmount": {
+              "sgst_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "igstAmount": {
+              "igst_amount": {
                 "type": "number",
                 "format": "float"
               },
-              "totalValue": {
+              "total_amount": {
                 "type": "number",
                 "format": "float"
               },
@@ -6653,12 +6660,12 @@
         "type": "object",
         "required": [
           "date",
-          "invoiceNo",
-          "taxableAmount",
-          "cgstAmount",
-          "sgstAmount",
-          "igstAmount",
-          "totalValue"
+          "invoice_number",
+          "taxable_amount",
+          "cgst_amount",
+          "sgst_amount",
+          "igst_amount",
+          "total_amount"
         ],
         "properties": {
           "id": {
@@ -6671,26 +6678,26 @@
             "type": "string",
             "format": "date"
           },
-          "invoiceNo": {
+          "invoice_number": {
             "type": "string"
           },
-          "taxableAmount": {
+          "taxable_amount": {
             "type": "number",
             "format": "float"
           },
-          "cgstAmount": {
+          "cgst_amount": {
             "type": "number",
             "format": "float"
           },
-          "sgstAmount": {
+          "sgst_amount": {
             "type": "number",
             "format": "float"
           },
-          "igstAmount": {
+          "igst_amount": {
             "type": "number",
             "format": "float"
           },
-          "totalValue": {
+          "total_amount": {
             "type": "number",
             "format": "float"
           },
@@ -6745,16 +6752,17 @@
                       "type": "number",
                       "format": "float"
                     },
-                    "paymentMethod": {
+                    "payment_method": {
                       "type": "string",
                       "enum": [
                         "cash",
                         "cheque",
                         "net-banking",
-                        "upi"
+                        "upi",
+                        "other"
                       ]
                     },
-                    "receivedTo": {
+                    "received_to": {
                       "type": "string"
                     },
                     "invoice": {
@@ -7234,26 +7242,26 @@
                       "type": "string",
                       "format": "date"
                     },
-                    "invoiceNo": {
+                    "invoice_number": {
                       "type": "string"
                     },
-                    "taxableAmount": {
+                    "taxable_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "cgstAmount": {
+                    "cgst_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "sgstAmount": {
+                    "sgst_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "igstAmount": {
+                    "igst_amount": {
                       "type": "number",
                       "format": "float"
                     },
-                    "totalValue": {
+                    "total_amount": {
                       "type": "number",
                       "format": "float"
                     },

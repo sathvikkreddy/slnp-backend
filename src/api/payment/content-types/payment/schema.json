@@ -4,7 +4,8 @@
   "info": {
     "singularName": "payment",
     "pluralName": "payments",
-    "displayName": "Payment"
+    "displayName": "Payment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,16 +25,19 @@
       "type": "decimal",
       "required": true
     },
-    "paymentMethod": {
+    "payment_method": {
       "type": "enumeration",
       "enum": [
         "cash",
         "cheque",
         "net-banking",
-        "upi"
-      ]
+        "upi",
+        "other"
+      ],
+      "required": true,
+      "default": "upi"
     },
-    "receivedTo": {
+    "received_to": {
       "type": "string"
     },
     "invoice": {
