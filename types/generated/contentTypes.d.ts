@@ -378,7 +378,7 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
     singularName: 'company';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     address: Schema.Attribute.Component<'address.full-address', false> &
