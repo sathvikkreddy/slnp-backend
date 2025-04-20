@@ -423,7 +423,7 @@ export interface ApiInvoiceInvoice extends Struct.CollectionTypeSchema {
     singularName: 'invoice';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     bill_to_company: Schema.Attribute.Relation<
