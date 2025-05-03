@@ -500,7 +500,7 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
     singularName: 'payment';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     amount: Schema.Attribute.Decimal & Schema.Attribute.Required;
@@ -516,11 +516,7 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
       'api::payment.payment'
     > &
       Schema.Attribute.Private;
-    payment_method: Schema.Attribute.Enumeration<
-      ['cash', 'cheque', 'net-banking', 'upi', 'other']
-    > &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<'upi'>;
+    payment_method: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     received_to: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -538,7 +534,7 @@ export interface ApiPurchasePurchase extends Struct.CollectionTypeSchema {
     singularName: 'purchase';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     cgst_amount: Schema.Attribute.Decimal &

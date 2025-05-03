@@ -25,18 +25,6 @@
       "type": "decimal",
       "required": true
     },
-    "payment_method": {
-      "type": "enumeration",
-      "enum": [
-        "cash",
-        "cheque",
-        "net-banking",
-        "upi",
-        "other"
-      ],
-      "required": true,
-      "default": "upi"
-    },
     "received_to": {
       "type": "string"
     },
@@ -45,6 +33,9 @@
       "relation": "manyToOne",
       "target": "api::invoice.invoice",
       "inversedBy": "payments"
+    },
+    "payment_method": {
+      "type": "string"
     }
   }
 }

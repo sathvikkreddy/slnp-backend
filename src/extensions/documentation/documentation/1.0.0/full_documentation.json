@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-04-20T07:49:48.933Z"
+    "x-generation-date": "2025-05-03T13:48:46.971Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4313,16 +4313,6 @@
                   "type": "number",
                   "format": "float"
                 },
-                "payment_method": {
-                  "type": "string",
-                  "enum": [
-                    "cash",
-                    "cheque",
-                    "net-banking",
-                    "upi",
-                    "other"
-                  ]
-                },
                 "received_to": {
                   "type": "string"
                 },
@@ -4336,6 +4326,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "payment_method": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -5447,16 +5440,6 @@
                   "type": "number",
                   "format": "float"
                 },
-                "payment_method": {
-                  "type": "string",
-                  "enum": [
-                    "cash",
-                    "cheque",
-                    "net-banking",
-                    "upi",
-                    "other"
-                  ]
-                },
                 "received_to": {
                   "type": "string"
                 },
@@ -5470,6 +5453,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "payment_method": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -5620,8 +5606,7 @@
           "data": {
             "required": [
               "date",
-              "amount",
-              "payment_method"
+              "amount"
             ],
             "type": "object",
             "properties": {
@@ -5644,16 +5629,6 @@
                 "type": "number",
                 "format": "float"
               },
-              "payment_method": {
-                "type": "string",
-                "enum": [
-                  "cash",
-                  "cheque",
-                  "net-banking",
-                  "upi",
-                  "other"
-                ]
-              },
               "received_to": {
                 "type": "string"
               },
@@ -5667,6 +5642,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "payment_method": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -5728,8 +5706,7 @@
         "type": "object",
         "required": [
           "date",
-          "amount",
-          "payment_method"
+          "amount"
         ],
         "properties": {
           "id": {
@@ -5792,16 +5769,6 @@
                     "amount": {
                       "type": "number",
                       "format": "float"
-                    },
-                    "payment_method": {
-                      "type": "string",
-                      "enum": [
-                        "cash",
-                        "cheque",
-                        "net-banking",
-                        "upi",
-                        "other"
-                      ]
                     },
                     "received_to": {
                       "type": "string"
@@ -6214,6 +6181,9 @@
                         }
                       }
                     },
+                    "payment_method": {
+                      "type": "string"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -6456,16 +6426,6 @@
             "type": "number",
             "format": "float"
           },
-          "payment_method": {
-            "type": "string",
-            "enum": [
-              "cash",
-              "cheque",
-              "net-banking",
-              "upi",
-              "other"
-            ]
-          },
           "received_to": {
             "type": "string"
           },
@@ -6479,6 +6439,9 @@
                 "type": "string"
               }
             }
+          },
+          "payment_method": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -6752,16 +6715,6 @@
                       "type": "number",
                       "format": "float"
                     },
-                    "payment_method": {
-                      "type": "string",
-                      "enum": [
-                        "cash",
-                        "cheque",
-                        "net-banking",
-                        "upi",
-                        "other"
-                      ]
-                    },
                     "received_to": {
                       "type": "string"
                     },
@@ -7172,6 +7125,9 @@
                           }
                         }
                       }
+                    },
+                    "payment_method": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
